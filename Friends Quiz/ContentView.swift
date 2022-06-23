@@ -9,9 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Friends Quiz")
-            .font(.title)
-            .padding()
+        ZStack {
+            Color("DefaultColor")
+                .ignoresSafeArea()
+            VStack {
+                Image("title")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                Text("info")
+                    .font(.custom(FriendsFont().fontName, size: 25))
+            }
+        }
     }
 }
 
