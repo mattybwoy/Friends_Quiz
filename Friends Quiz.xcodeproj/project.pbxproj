@@ -13,6 +13,9 @@
 		3460AC8D2864538A004E0179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3460AC8C2864538A004E0179 /* Preview Assets.xcassets */; };
 		3460AC9D28647A05004E0179 /* FriendsFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460AC9C28647A05004E0179 /* FriendsFont.swift */; };
 		3460AC9F28647D21004E0179 /* GABRWFFR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3460AC9E28647D21004E0179 /* GABRWFFR.ttf */; };
+		3460ACA22864C284004E0179 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA12864C284004E0179 /* QuizView.swift */; };
+		3460ACA42864D4E0004E0179 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA32864D4E0004E0179 /* AnswerView.swift */; };
+		3460ACA72864DA30004E0179 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA62864DA30004E0179 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		3460AC9728646D6F004E0179 /* Friends-Quiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Friends-Quiz-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3460AC9C28647A05004E0179 /* FriendsFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsFont.swift; sourceTree = "<group>"; };
 		3460AC9E28647D21004E0179 /* GABRWFFR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GABRWFFR.ttf; sourceTree = "<group>"; };
+		3460ACA12864C284004E0179 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		3460ACA32864D4E0004E0179 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		3460ACA62864DA30004E0179 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,8 @@
 				3460AC9728646D6F004E0179 /* Friends-Quiz-Info.plist */,
 				3460AC94286468EF004E0179 /* Fonts */,
 				3460AC8528645388004E0179 /* Friends_QuizApp.swift */,
-				3460AC8728645388004E0179 /* ContentView.swift */,
+				3460ACA02864C264004E0179 /* Views */,
+				3460ACA52864D903004E0179 /* Models */,
 				3460AC892864538A004E0179 /* Assets.xcassets */,
 				3460AC8B2864538A004E0179 /* Preview Content */,
 			);
@@ -83,6 +90,24 @@
 				3460AC9C28647A05004E0179 /* FriendsFont.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3460ACA02864C264004E0179 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3460AC8728645388004E0179 /* ContentView.swift */,
+				3460ACA12864C284004E0179 /* QuizView.swift */,
+				3460ACA32864D4E0004E0179 /* AnswerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3460ACA52864D903004E0179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3460ACA62864DA30004E0179 /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3460AC8828645388004E0179 /* ContentView.swift in Sources */,
+				3460ACA22864C284004E0179 /* QuizView.swift in Sources */,
+				3460ACA42864D4E0004E0179 /* AnswerView.swift in Sources */,
+				3460ACA72864DA30004E0179 /* Question.swift in Sources */,
 				3460AC9D28647A05004E0179 /* FriendsFont.swift in Sources */,
 				3460AC8628645388004E0179 /* Friends_QuizApp.swift in Sources */,
 			);

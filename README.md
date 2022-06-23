@@ -7,7 +7,8 @@ Friends Quiz
 ## Objective
 My first app built using SwiftUI, a friends quiz app built following the MVVM design pattern.
 
-## Progress 
+## Progress
+- Start screen implemented 
 
 ## Improvements
 

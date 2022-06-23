@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color("DefaultColor")
+            Color("PrimaryColor")
                 .ignoresSafeArea()
             VStack {
                 Spacer()
@@ -34,11 +34,14 @@ struct ContentView: View {
                     Text("Begin!")
                         .padding(.horizontal)
                         .font(.custom(FriendsFont().fontName, size: 40))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("SecondaryColor"))
                 }
                 .padding()
                 .background(.yellow)
                 .cornerRadius(25)
+                .overlay(RoundedRectangle(cornerRadius: 25)
+                            .stroke(.black, lineWidth: 5)
+                )
                 
             }
         }
