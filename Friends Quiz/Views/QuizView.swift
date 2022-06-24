@@ -43,12 +43,17 @@ struct QuizView: View {
                             .cornerRadius(25)
                             .overlay(RoundedRectangle(cornerRadius: 25)
                                         .stroke(.black, lineWidth: 3))
+                            .disabled(guessedIndex != nil)
                     }
+                }
+                if guessedIndex != nil {
+                    BottomTextView(str: "Next Question")
                 }
                 Spacer()
             }
         }
     }
+    
     func buttonColor(at buttonIndex: Int) -> Color {
         guard let userSelection = guessedIndex, userSelection == buttonIndex else {
             return .yellow
@@ -60,6 +65,7 @@ struct QuizView: View {
         }
     }
 }
+
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {

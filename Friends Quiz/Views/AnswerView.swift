@@ -21,9 +21,10 @@ struct AnswerView: View {
                 .padding(.horizontal)
                 .font(.custom(FriendsFont().fontName, size: 22))
                 .foregroundColor(Color("SecondaryColor"))
+                .frame(minWidth: 100, maxWidth: 220, minHeight: 25, maxHeight: 45, alignment: .center)
+                .padding()
         }
-        .frame(minWidth: 100, maxWidth: 220, minHeight: 25, maxHeight: 45, alignment: .center)
-        .padding()
+
     }
 }
 

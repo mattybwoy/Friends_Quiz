@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3460AC8628645388004E0179 /* Friends_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460AC8528645388004E0179 /* Friends_QuizApp.swift */; };
-		3460AC8828645388004E0179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460AC8728645388004E0179 /* ContentView.swift */; };
+		3460AC8828645388004E0179 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460AC8728645388004E0179 /* GameView.swift */; };
 		3460AC8A2864538A004E0179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3460AC892864538A004E0179 /* Assets.xcassets */; };
 		3460AC8D2864538A004E0179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3460AC8C2864538A004E0179 /* Preview Assets.xcassets */; };
 		3460AC9D28647A05004E0179 /* FriendsFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460AC9C28647A05004E0179 /* FriendsFont.swift */; };
@@ -16,12 +16,13 @@
 		3460ACA22864C284004E0179 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA12864C284004E0179 /* QuizView.swift */; };
 		3460ACA42864D4E0004E0179 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA32864D4E0004E0179 /* AnswerView.swift */; };
 		3460ACA72864DA30004E0179 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA62864DA30004E0179 /* Question.swift */; };
+		3460ACA928661A4B004E0179 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA828661A4B004E0179 /* BottomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3460AC8228645388004E0179 /* Friends Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3460AC8528645388004E0179 /* Friends_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends_QuizApp.swift; sourceTree = "<group>"; };
-		3460AC8728645388004E0179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3460AC8728645388004E0179 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		3460AC892864538A004E0179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3460AC8C2864538A004E0179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3460AC93286455B7004E0179 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		3460ACA12864C284004E0179 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		3460ACA32864D4E0004E0179 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		3460ACA62864DA30004E0179 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3460ACA828661A4B004E0179 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,10 @@
 		3460ACA02864C264004E0179 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3460AC8728645388004E0179 /* ContentView.swift */,
+				3460AC8728645388004E0179 /* GameView.swift */,
 				3460ACA12864C284004E0179 /* QuizView.swift */,
 				3460ACA32864D4E0004E0179 /* AnswerView.swift */,
+				3460ACA828661A4B004E0179 /* BottomTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,11 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3460AC8828645388004E0179 /* ContentView.swift in Sources */,
+				3460AC8828645388004E0179 /* GameView.swift in Sources */,
 				3460ACA22864C284004E0179 /* QuizView.swift in Sources */,
 				3460ACA42864D4E0004E0179 /* AnswerView.swift in Sources */,
 				3460ACA72864DA30004E0179 /* Question.swift in Sources */,
 				3460AC9D28647A05004E0179 /* FriendsFont.swift in Sources */,
+				3460ACA928661A4B004E0179 /* BottomTextView.swift in Sources */,
 				3460AC8628645388004E0179 /* Friends_QuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

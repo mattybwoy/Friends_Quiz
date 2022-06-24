@@ -11,7 +11,7 @@ import SwiftUI
 struct Friends_QuizApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
         }
     }
 }
