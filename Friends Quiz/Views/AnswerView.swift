@@ -10,29 +10,25 @@ import SwiftUI
 struct AnswerView: View {
     
     let answerText: String
+    let onClick: () -> Void
     
     var body: some View {
     
         Button {
-            print("tapped")
+            onClick()
         } label: {
             Text(answerText)
                 .padding(.horizontal)
                 .font(.custom(FriendsFont().fontName, size: 22))
                 .foregroundColor(Color("SecondaryColor"))
         }
+        .frame(minWidth: 100, maxWidth: 220, minHeight: 25, maxHeight: 45, alignment: .center)
         .padding()
-        .background(.yellow)
-        .cornerRadius(25)
-        .overlay(RoundedRectangle(cornerRadius: 25)
-                    .stroke(.black, lineWidth: 3)
-                    
-        )
     }
 }
 
 struct AnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerView(answerText: "Answer 1")
+        AnswerView(answerText: "Answer 1", onClick: {})
     }
 }
