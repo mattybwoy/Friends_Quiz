@@ -9,9 +9,7 @@ import SwiftUI
 
 struct QuizView: View {
     
-    let viewModel = GamevViewModel()
-    
-    @State private var guessedIndex: Int?
+    @StateObject var viewModel = GameViewModel()
     
     var body: some View {
         ZStack {
@@ -26,7 +24,7 @@ struct QuizView: View {
                 Text("quiz")
                     .font(.custom(FriendsFont().fontName, size: 40))
                     .offset(x: 0, y: -20)
-                Text("Question 1/3")
+                Text(viewModel.progressText)
                     .font(.custom(FriendsFont().fontName, size: 20))
                     .padding()
                 Text(viewModel.questionText)
@@ -37,33 +35,26 @@ struct QuizView: View {
                 VStack(alignment: .center, spacing: 20) {
                     ForEach(viewModel.answerIndices.indices) { index in
                         AnswerView(answerText: viewModel.answerText(for: index)) {
-                            guessedIndex = index
+                            viewModel.makeGuessForCurrentQuestion(at: index)
                         }
-                            .background(buttonColor(at: index))
+                        .background(viewModel.buttonColor(at: index))
                             .cornerRadius(25)
                             .overlay(RoundedRectangle(cornerRadius: 25)
                                         .stroke(.black, lineWidth: 3))
-                            .disabled(guessedIndex != nil)
+                            .disabled(viewModel.guessMade)
                     }
                 }
-                if guessedIndex != nil {
-                    BottomTextView(str: "Next Question", onClick: {})
+                if viewModel.guessMade {
+                    BottomTextView(str: "Next Question", onClick: {
+                        viewModel.advanceGameState()
+                    })
                 }
                 Spacer()
             }
         }
     }
+
     
-    func buttonColor(at buttonIndex: Int) -> Color {
-        guard let userSelection = guessedIndex, userSelection == buttonIndex else {
-            return .yellow
-        }
-        if userSelection == viewModel.correctAnswerIndex {
-            return .green
-        } else {
-            return .red
-        }
-    }
 }
 
 

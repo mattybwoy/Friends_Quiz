@@ -10,7 +10,13 @@ import Foundation
 struct Game {
     private let questions = Question.allQuestions.shuffled()
     
-    private var currentQuestionIndex = 0
+    private(set) var currentQuestionIndex = 0
+    
+    private(set) var guesses = [Question : Int]()
+    
+    var questionCount: Int {
+        questions.count
+    }
     
     var currentQuestion: Question {
         questions[currentQuestionIndex]
@@ -20,4 +26,10 @@ struct Game {
         let nextQuestionIndex = currentQuestionIndex + 1
         currentQuestionIndex = nextQuestionIndex
     }
+    
+    mutating func makeGuess(at index: Int) {
+        guesses[currentQuestion] = index
+    }
+    
+    
 }
