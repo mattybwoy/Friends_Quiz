@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuizView: View {
     
-    var question: Question
+    let viewModel = GamevViewModel()
     
     @State private var guessedIndex: Int?
     
@@ -29,14 +29,14 @@ struct QuizView: View {
                 Text("Question 1/3")
                     .font(.custom(FriendsFont().fontName, size: 20))
                     .padding()
-                Text(question.questionText)
+                Text(viewModel.questionText)
                     .font(.custom(FriendsFont().fontName, size: 30))
                     .padding(.bottom)
                     .multilineTextAlignment(.center)
                 Spacer()
                 VStack(alignment: .center, spacing: 20) {
-                    ForEach(question.possibleAnswers.indices) { index in
-                        AnswerView(answerText: question.possibleAnswers[index]) {
+                    ForEach(viewModel.answerIndices.indices) { index in
+                        AnswerView(answerText: viewModel.answerText(for: index)) {
                             guessedIndex = index
                         }
                             .background(buttonColor(at: index))
@@ -47,7 +47,7 @@ struct QuizView: View {
                     }
                 }
                 if guessedIndex != nil {
-                    BottomTextView(str: "Next Question")
+                    BottomTextView(str: "Next Question", onClick: {})
                 }
                 Spacer()
             }
@@ -58,7 +58,7 @@ struct QuizView: View {
         guard let userSelection = guessedIndex, userSelection == buttonIndex else {
             return .yellow
         }
-        if userSelection == question.correctAnswerIndex {
+        if userSelection == viewModel.correctAnswerIndex {
             return .green
         } else {
             return .red
@@ -69,6 +69,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView(question: Question.allQuestions[0])
+        QuizView()
     }
 }

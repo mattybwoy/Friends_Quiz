@@ -31,11 +31,11 @@ struct GameView: View {
                 Button {
                     print("tapped")
                 } label: {
-                    Text("Begin!")
-                        .padding(.horizontal)
-                        .font(.custom(FriendsFont().fontName, size: 40))
-                        .foregroundColor(Color("SecondaryColor"))
-                }
+                        Text("Begin!")
+                            .padding(.horizontal)
+                            .font(.custom(FriendsFont().fontName, size: 40))
+                            .foregroundColor(Color("SecondaryColor"))
+                    }
                 .padding()
                 .background(.yellow)
                 .cornerRadius(25)
