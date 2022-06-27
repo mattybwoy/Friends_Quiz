@@ -30,12 +30,12 @@ class GameViewModel: ObservableObject {
         game.guesses[game.currentQuestion] != nil
     }
     
-    var correctSelectionCount: Int {
-        game.selectionCount.correct
+    var selectionCount: (Int, Int) {
+        game.selectionCount
     }
     
-    var incorrectSelectionCount: Int {
-        game.selectionCount.incorrect
+    var isGameOver: Bool {
+        game.gameOver
     }
     
     func answerText(for index: Int) -> String {
@@ -49,6 +49,7 @@ class GameViewModel: ObservableObject {
     func makeGuessForCurrentQuestion(at index: Int) {
         game.makeGuess(at: index)
     }
+    
     
     func buttonColor(at buttonIndex: Int) -> Color {
         guard let userSelection = game.guesses[game.currentQuestion], userSelection == buttonIndex else {

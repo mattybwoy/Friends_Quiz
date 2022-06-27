@@ -45,22 +45,32 @@ struct QuizView: View {
                     }
                 }
                 if viewModel.guessMade {
-                    BottomTextView(str: "Next Question", onClick: {
+                    Button {
                         viewModel.advanceGameState()
-                    })
+                    } label: {
+                        BottomTextView(str: "Next Question")
+                    }
+
                 }
                 Spacer()
             }
         }
         .navigationBarHidden(true)
+        .background(resultsNavigationLink)
     }
-
-    
+    private var resultsNavigationLink: some View {
+        NavigationLink(
+            destination: ResultView(viewModel: ResultsViewModel(selectionCount: viewModel.selectionCount)),
+            isActive: .constant(viewModel.isGameOver),
+            label: { EmptyView() })
+    }
 }
 
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView()
+        NavigationView {
+            QuizView()
+        }
     }
 }

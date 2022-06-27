@@ -10,23 +10,16 @@ import SwiftUI
 struct BottomTextView: View {
     
     let str: String
-    let onClick: () -> Void
     
     var body: some View {
         
         HStack {
             Spacer()
-            Button {
-                onClick()
-            } label: {
                 Text(str)
                     .font(.custom(FriendsFont().fontName, size: 30))
                     .foregroundColor(.black)
                     .padding()
-            }
-
             Spacer()
-                
         }
         .background(.yellow)
     }
@@ -34,6 +27,6 @@ struct BottomTextView: View {
 
 struct BottomTextView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomTextView(str: "Next Question") {}
+        BottomTextView(str: "Next Question")
     }
 }

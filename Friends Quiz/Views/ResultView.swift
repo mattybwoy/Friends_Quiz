@@ -26,20 +26,20 @@ struct ResultView: View {
                         .font(.custom(FriendsFont().fontName, size: 40))
                         .offset(x: 0, y: -20)
                     Spacer()
-                    Text("Score: \(viewModel.selectionCount.0) / \(viewModel.selectionCount.1)")
+                    Text("Score: \(viewModel.selectionCount.0) / \(viewModel.selectionCount.0 + viewModel.selectionCount.1)")
                     Text(viewModel.finalPercentText)
                     Text(viewModel.letterGrade)
                     Spacer()
                     NavigationLink {
                         QuizView()
                     } label: {
-                        BottomTextView(str: "Try again", onClick: <#() -> Void#>)
+                        BottomTextView(str: "Try again")
                             .padding(.bottom)
                     }
                 }
-
             }
         }
+        .navigationBarHidden(true)
 
     }
 }

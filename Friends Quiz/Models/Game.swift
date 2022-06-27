@@ -14,7 +14,7 @@ struct Game {
     
     private(set) var guesses = [Question : Int]()
     
-    private var gameOver = false
+    var gameOver = false
     
     var questionCount: Int {
         questions.count
