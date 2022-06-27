@@ -21,6 +21,7 @@ struct BottomTextView: View {
             } label: {
                 Text(str)
                     .font(.custom(FriendsFont().fontName, size: 30))
+                    .foregroundColor(.black)
                     .padding()
             }
 
@@ -33,6 +34,6 @@ struct BottomTextView: View {
 
 struct BottomTextView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomTextView(str: "Next Question", onClick: {})
+        BottomTextView(str: "Next Question") {}
     }
 }

@@ -24,6 +24,18 @@ struct Game {
         questions[currentQuestionIndex]
     }
     
+    var selectionCount: (correct: Int, incorrect: Int) {
+        var count: (correct: Int, incorrect: Int) = (0, 0)
+        for (question, selectedIndex) in guesses {
+            if selectedIndex == question.correctAnswerIndex {
+                count.correct += 1
+            } else {
+                count.incorrect += 1
+            }
+        }
+        return count
+    }
+    
     mutating func advanceGameState() {
         let nextQuestionIndex = currentQuestionIndex + 1
         if !questions.indices.contains(nextQuestionIndex) {

@@ -8,37 +8,46 @@
 import SwiftUI
 
 struct ResultView: View {
-    
-    @StateObject var viewModel = GameViewModel()
+
+    let viewModel: ResultsViewModel
     
     var body: some View {
-        ZStack {
-            Color("PrimaryColor")
-                .ignoresSafeArea()
-            VStack {
-                Image("title")
-                    .resizable()
+        NavigationView {
+            ZStack {
+                Color("PrimaryColor")
                     .ignoresSafeArea()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                Text("quiz")
-                    .font(.custom(FriendsFont().fontName, size: 40))
-                    .offset(x: 0, y: -20)
-                Spacer()
-                Text("Score: \(viewModel.progressText)")
-                Text("Your Rating")
-                Spacer()
-                BottomTextView(str: "Try Again") {
-                    QuizView()
+                VStack {
+                    Image("title")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                    Text("quiz")
+                        .font(.custom(FriendsFont().fontName, size: 40))
+                        .offset(x: 0, y: -20)
+                    Spacer()
+                    Text("Score: \(viewModel.selectionCount.0) / \(viewModel.selectionCount.1)")
+                    Text(viewModel.finalPercentText)
+                    Text(viewModel.letterGrade)
+                    Spacer()
+                    NavigationLink {
+                        QuizView()
+                    } label: {
+                        BottomTextView(str: "Try again", onClick: <#() -> Void#>)
+                            .padding(.bottom)
+                    }
                 }
-            }
 
+            }
         }
+
     }
 }
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        NavigationView {
+            ResultView(viewModel: ResultsViewModel(selectionCount: (3,1)))
+        }
     }
 }
