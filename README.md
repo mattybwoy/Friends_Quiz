@@ -23,5 +23,8 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 ## Tech Stack
 SwiftUI
 
+## Simulator Version
+iPhone 11
+
 ## Dependencies
 

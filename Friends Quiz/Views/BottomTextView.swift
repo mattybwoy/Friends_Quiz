@@ -23,7 +23,9 @@ struct BottomTextView: View {
                     .font(.custom(FriendsFont().fontName, size: 30))
                     .padding()
             }
+
             Spacer()
+                
         }
         .background(.yellow)
     }

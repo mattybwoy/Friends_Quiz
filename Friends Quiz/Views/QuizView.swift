@@ -52,6 +52,7 @@ struct QuizView: View {
                 Spacer()
             }
         }
+        .navigationBarHidden(true)
     }
 
     

@@ -14,6 +14,8 @@ struct Game {
     
     private(set) var guesses = [Question : Int]()
     
+    private var gameOver = false
+    
     var questionCount: Int {
         questions.count
     }
@@ -24,7 +26,11 @@ struct Game {
     
     mutating func advanceGameState() {
         let nextQuestionIndex = currentQuestionIndex + 1
-        currentQuestionIndex = nextQuestionIndex
+        if !questions.indices.contains(nextQuestionIndex) {
+            gameOver = true
+        } else {
+            currentQuestionIndex = nextQuestionIndex
+        }
     }
     
     mutating func makeGuess(at index: Int) {

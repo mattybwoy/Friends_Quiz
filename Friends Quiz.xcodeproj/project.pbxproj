@@ -19,6 +19,7 @@
 		3460ACA928661A4B004E0179 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACA828661A4B004E0179 /* BottomTextView.swift */; };
 		3460ACAB2867188E004E0179 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACAA2867188E004E0179 /* Game.swift */; };
 		3460ACAE28671BEE004E0179 /* GamevIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460ACAD28671BEE004E0179 /* GamevIewModel.swift */; };
+		349E5F442869A41300F359D0 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E5F432869A41200F359D0 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3460ACA828661A4B004E0179 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		3460ACAA2867188E004E0179 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3460ACAD28671BEE004E0179 /* GamevIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamevIewModel.swift; sourceTree = "<group>"; };
+		349E5F432869A41200F359D0 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3460ACA12864C284004E0179 /* QuizView.swift */,
 				3460ACA32864D4E0004E0179 /* AnswerView.swift */,
 				3460ACA828661A4B004E0179 /* BottomTextView.swift */,
+				349E5F432869A41200F359D0 /* ResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				3460ACA72864DA30004E0179 /* Question.swift in Sources */,
 				3460AC9D28647A05004E0179 /* FriendsFont.swift in Sources */,
 				3460ACA928661A4B004E0179 /* BottomTextView.swift in Sources */,
+				349E5F442869A41300F359D0 /* ResultView.swift in Sources */,
 				3460AC8628645388004E0179 /* Friends_QuizApp.swift in Sources */,
 				3460ACAB2867188E004E0179 /* Game.swift in Sources */,
 			);
