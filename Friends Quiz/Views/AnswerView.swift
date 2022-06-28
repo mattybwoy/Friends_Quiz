@@ -18,6 +18,7 @@ struct AnswerView: View {
             onClick()
         } label: {
             Text(answerText)
+                .scaledToFill()
                 .padding(.horizontal)
                 .font(.custom(FriendsFont().fontName, size: 22))
                 .foregroundColor(Color("SecondaryColor"))
