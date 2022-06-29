@@ -13,8 +13,8 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 - Results View finished
 
 ## Improvements
-- More questions
 - Flesh out results view
+- Testing
 
 ## Testing
 

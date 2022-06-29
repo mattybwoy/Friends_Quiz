@@ -41,7 +41,7 @@ struct Question: Hashable {
                  possibleAnswers: ["Psychologist", "Orthodontist", "Paleontolgist", "Periodontist"],
                  correctAnswerIndex: 3),
         Question(questionText: "Where does Ross become a college professor?",
-                 possibleAnswers: ["Columbia University", "NYU", "Brooklyn College", "New York University"],
+                 possibleAnswers: ["Columbia University", "NYU", "Brooklyn College", "Monroe College"],
                  correctAnswerIndex: 1)
     ]
 }
