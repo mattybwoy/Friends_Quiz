@@ -17,7 +17,8 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 - Testing
 
 ## Testing (XCT)
-2/2 UITests Passing
+2/2 UI Tests Passing
+2/2 Unit Tests Passing
 
 ## Installation
 1. Clone Repository
