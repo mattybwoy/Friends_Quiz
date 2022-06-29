@@ -16,9 +16,11 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 - Flesh out results view
 - Testing
 
-## Testing
+## Testing (XCT)
+2/2 UITests Passing
 
 ## Installation
+1. Clone Repository
 
 ## Screenshots
 

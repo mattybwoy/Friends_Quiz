@@ -22,7 +22,27 @@
 		349E5F442869A41300F359D0 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E5F432869A41200F359D0 /* ResultView.swift */; };
 		34EC71C62869DDD3000923F8 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71C52869DDD3000923F8 /* ResultsViewModel.swift */; };
 		34EC71C8286C43F7000923F8 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71C7286C43F7000923F8 /* TitleView.swift */; };
+		34EC71D0286CBD88000923F8 /* Friends_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71CF286CBD88000923F8 /* Friends_QuizTests.swift */; };
+		34EC71DD286CBDC4000923F8 /* Friends_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71DC286CBDC4000923F8 /* Friends_QuizUITests.swift */; };
+		34EC71DF286CBDC4000923F8 /* Friends_QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71DE286CBDC4000923F8 /* Friends_QuizUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34EC71D1286CBD88000923F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3460AC7A28645388004E0179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3460AC8128645388004E0179;
+			remoteInfo = "Friends Quiz";
+		};
+		34EC71E0286CBDC4000923F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3460AC7A28645388004E0179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3460AC8128645388004E0179;
+			remoteInfo = "Friends Quiz";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3460AC8228645388004E0179 /* Friends Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +63,29 @@
 		349E5F432869A41200F359D0 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		34EC71C52869DDD3000923F8 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 		34EC71C7286C43F7000923F8 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		34EC71CD286CBD88000923F8 /* Friends QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Friends QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EC71CF286CBD88000923F8 /* Friends_QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends_QuizTests.swift; sourceTree = "<group>"; };
+		34EC71DA286CBDC4000923F8 /* Friends QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Friends QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EC71DC286CBDC4000923F8 /* Friends_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends_QuizUITests.swift; sourceTree = "<group>"; };
+		34EC71DE286CBDC4000923F8 /* Friends_QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends_QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3460AC7F28645388004E0179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EC71CA286CBD88000923F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EC71D7286CBDC4000923F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +100,8 @@
 			children = (
 				3460AC93286455B7004E0179 /* README.md */,
 				3460AC8428645388004E0179 /* Friends Quiz */,
+				34EC71CE286CBD88000923F8 /* Friends QuizTests */,
+				34EC71DB286CBDC4000923F8 /* Friends QuizUITests */,
 				3460AC8328645388004E0179 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				3460AC8228645388004E0179 /* Friends Quiz.app */,
+				34EC71CD286CBD88000923F8 /* Friends QuizTests.xctest */,
+				34EC71DA286CBDC4000923F8 /* Friends QuizUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +179,23 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		34EC71CE286CBD88000923F8 /* Friends QuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				34EC71CF286CBD88000923F8 /* Friends_QuizTests.swift */,
+			);
+			path = "Friends QuizTests";
+			sourceTree = "<group>";
+		};
+		34EC71DB286CBDC4000923F8 /* Friends QuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34EC71DC286CBDC4000923F8 /* Friends_QuizUITests.swift */,
+				34EC71DE286CBDC4000923F8 /* Friends_QuizUITestsLaunchTests.swift */,
+			);
+			path = "Friends QuizUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +216,42 @@
 			productReference = 3460AC8228645388004E0179 /* Friends Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
+		34EC71CC286CBD88000923F8 /* Friends QuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34EC71D3286CBD88000923F8 /* Build configuration list for PBXNativeTarget "Friends QuizTests" */;
+			buildPhases = (
+				34EC71C9286CBD88000923F8 /* Sources */,
+				34EC71CA286CBD88000923F8 /* Frameworks */,
+				34EC71CB286CBD88000923F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34EC71D2286CBD88000923F8 /* PBXTargetDependency */,
+			);
+			name = "Friends QuizTests";
+			productName = "Friends QuizTests";
+			productReference = 34EC71CD286CBD88000923F8 /* Friends QuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34EC71D9286CBDC4000923F8 /* Friends QuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34EC71E2286CBDC4000923F8 /* Build configuration list for PBXNativeTarget "Friends QuizUITests" */;
+			buildPhases = (
+				34EC71D6286CBDC4000923F8 /* Sources */,
+				34EC71D7286CBDC4000923F8 /* Frameworks */,
+				34EC71D8286CBDC4000923F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34EC71E1286CBDC4000923F8 /* PBXTargetDependency */,
+			);
+			name = "Friends QuizUITests";
+			productName = "Friends QuizUITests";
+			productReference = 34EC71DA286CBDC4000923F8 /* Friends QuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +264,14 @@
 				TargetAttributes = {
 					3460AC8128645388004E0179 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					34EC71CC286CBD88000923F8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3460AC8128645388004E0179;
+					};
+					34EC71D9286CBDC4000923F8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3460AC8128645388004E0179;
 					};
 				};
 			};
@@ -185,6 +289,8 @@
 			projectRoot = "";
 			targets = (
 				3460AC8128645388004E0179 /* Friends Quiz */,
+				34EC71CC286CBD88000923F8 /* Friends QuizTests */,
+				34EC71D9286CBDC4000923F8 /* Friends QuizUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +303,20 @@
 				3460AC8D2864538A004E0179 /* Preview Assets.xcassets in Resources */,
 				3460AC8A2864538A004E0179 /* Assets.xcassets in Resources */,
 				3460AC9F28647D21004E0179 /* GABRWFFR.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EC71CB286CBD88000923F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EC71D8286CBDC4000923F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +342,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34EC71C9286CBD88000923F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EC71D0286CBD88000923F8 /* Friends_QuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EC71D6286CBDC4000923F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EC71DD286CBDC4000923F8 /* Friends_QuizUITests.swift in Sources */,
+				34EC71DF286CBDC4000923F8 /* Friends_QuizUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34EC71D2286CBD88000923F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3460AC8128645388004E0179 /* Friends Quiz */;
+			targetProxy = 34EC71D1286CBD88000923F8 /* PBXContainerItemProxy */;
+		};
+		34EC71E1286CBDC4000923F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3460AC8128645388004E0179 /* Friends Quiz */;
+			targetProxy = 34EC71E0286CBDC4000923F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3460AC8E2864538A004E0179 /* Debug */ = {
@@ -401,6 +551,76 @@
 			};
 			name = Release;
 		};
+		34EC71D4286CBD88000923F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Friends-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friends Quiz.app/Friends Quiz";
+			};
+			name = Debug;
+		};
+		34EC71D5286CBD88000923F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Friends-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Friends Quiz.app/Friends Quiz";
+			};
+			name = Release;
+		};
+		34EC71E3286CBDC4000923F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Friends-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Friends Quiz";
+			};
+			name = Debug;
+		};
+		34EC71E4286CBDC4000923F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6478Y3WC5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewlock.Friends-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Friends Quiz";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +638,24 @@
 			buildConfigurations = (
 				3460AC912864538A004E0179 /* Debug */,
 				3460AC922864538A004E0179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34EC71D3286CBD88000923F8 /* Build configuration list for PBXNativeTarget "Friends QuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EC71D4286CBD88000923F8 /* Debug */,
+				34EC71D5286CBD88000923F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34EC71E2286CBDC4000923F8 /* Build configuration list for PBXNativeTarget "Friends QuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EC71E3286CBDC4000923F8 /* Debug */,
+				34EC71E4286CBDC4000923F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
