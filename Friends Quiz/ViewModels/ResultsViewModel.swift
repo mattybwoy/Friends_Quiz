@@ -31,4 +31,17 @@ struct ResultsViewModel {
         }
     }
     
+    var gifSelector: String {
+        switch score {
+        case 90...100:
+            return "friendsCheer"
+        case 70..<90:
+            return "friendsGood"
+        case 50..<70:
+            return "friendsNotBad"
+        default:
+            return "friendsSad"
+        }
+    }
+    
 }

@@ -11,10 +11,9 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 - Start screen implemented
 - Question view finished
 - Results View finished
+- Gifs added for resultsView
 
 ## Improvements
-- Flesh out results view
-- Testing
 
 ## Testing (XCT)
 2/2 UI Tests Passing
@@ -34,4 +33,4 @@ SwiftUI
 iPhone 11
 
 ## Dependencies
-
+WebKit

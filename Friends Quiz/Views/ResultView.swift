@@ -19,6 +19,10 @@ struct ResultView: View {
                 VStack {
                     TitleView()
                     Spacer()
+                    GifImage(viewModel.gifSelector)
+                        .frame(width: 250, height: 200, alignment: .center)
+                        .aspectRatio(contentMode: .fill)
+                        .cornerRadius(10)
                     Text("Score: \(viewModel.selectionCount.0) / \(viewModel.selectionCount.0 + viewModel.selectionCount.1)")
                         .font(.custom(FriendsFont().fontName, size: 30))
                         .padding()
