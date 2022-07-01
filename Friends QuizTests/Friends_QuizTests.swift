@@ -11,6 +11,7 @@ import XCTest
 class Friends_QuizTests: XCTestCase {
     
     private var sut: Game!
+    private var mockSut: MockGame!
 
     override func setUpWithError() throws {
         sut = Game()
@@ -18,6 +19,7 @@ class Friends_QuizTests: XCTestCase {
 
     override func tearDownWithError() throws {
         sut = nil
+        mockSut = nil
     }
 
     func testAdvanceGameStateWhenClickedIncreasesCurrentQuestionIndex() {
@@ -28,6 +30,12 @@ class Friends_QuizTests: XCTestCase {
     func testUserMakingGuessesAddsToTheGuessesDictionary() {
         sut.makeGuess(at: 0)
         XCTAssertEqual(sut.guesses, [sut.currentQuestion: 0])
+    }
+    
+    func testUserMakingCorrectGuessesIncreasesCorrectSelectionCount() {
+        mockSut = MockGame()
+        mockSut.makeGuess(at: 2)
+        XCTAssertEqual(mockSut.selectionCount.correct, 1)
     }
 
     func testPerformanceExample() throws {

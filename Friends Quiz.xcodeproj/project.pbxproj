@@ -30,6 +30,7 @@
 		34EC71EC286E0582000923F8 /* friendsSad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71E8286E0582000923F8 /* friendsSad.gif */; };
 		34EC71ED286E0582000923F8 /* friendsNotBad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71E9286E0582000923F8 /* friendsNotBad.gif */; };
 		34EC71F6286E0D91000923F8 /* friendsCheer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71F5286E0D91000923F8 /* friendsCheer.gif */; };
+		34EC71F9286EFEBF000923F8 /* MockGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC71F8286EFEBF000923F8 /* MockGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		34EC71E8286E0582000923F8 /* friendsSad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = friendsSad.gif; sourceTree = "<group>"; };
 		34EC71E9286E0582000923F8 /* friendsNotBad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = friendsNotBad.gif; sourceTree = "<group>"; };
 		34EC71F5286E0D91000923F8 /* friendsCheer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = friendsCheer.gif; sourceTree = "<group>"; };
+		34EC71F8286EFEBF000923F8 /* MockGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				34EC71CF286CBD88000923F8 /* Friends_QuizTests.swift */,
+				34EC71F8286EFEBF000923F8 /* MockGame.swift */,
 			);
 			path = "Friends QuizTests";
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EC71D0286CBD88000923F8 /* Friends_QuizTests.swift in Sources */,
+				34EC71F9286EFEBF000923F8 /* MockGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

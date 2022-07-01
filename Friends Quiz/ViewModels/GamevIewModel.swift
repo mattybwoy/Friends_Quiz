@@ -8,7 +8,11 @@
 import SwiftUI
 
 class GameViewModel: ObservableObject {
-    @Published var game = Game()
+    @Published var game: Game
+    
+    required init(game: Game) {
+        self.game = game
+    }
     
     var questionText: String {
         game.currentQuestion.questionText
