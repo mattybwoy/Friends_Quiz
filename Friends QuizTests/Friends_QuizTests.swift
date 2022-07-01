@@ -37,6 +37,19 @@ class Friends_QuizTests: XCTestCase {
         mockSut.makeGuess(at: 2)
         XCTAssertEqual(mockSut.selectionCount.correct, 1)
     }
+    
+    func testUserMakingIncorrectGuessesIncreasesIncorrectSelectionCount() {
+        mockSut = MockGame()
+        mockSut.makeGuess(at: 1)
+        XCTAssertEqual(mockSut.selectionCount.incorrect, 1)
+    }
+    
+    func testGameOverIsTrueWhenQuizIsOver() {
+        mockSut = MockGame()
+        mockSut.currentQuestionIndex = 9
+        mockSut.advanceGameState()
+        XCTAssertEqual(mockSut.gameOver, true)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

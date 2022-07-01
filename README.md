@@ -16,13 +16,17 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 ## Improvements
 
 ## Testing (XCT)
-2/2 UI Tests Passing
-3/3 Unit Tests Passing
+- 2/2 UI Tests Passing
+- 5/5 Unit Tests Passing
 
 ## Installation
 1. Clone Repository
 
 ## Screenshots
+<img src=(Documentation/StartScreen.png) width="50" height="50">
+![StartScreen](Documentation/StartScreen.png)
+![QuizScreen](Documentation/QuizScreen.png)
+![ResultScreen](Documentation/ResultScreen.png)
 
 ## Demo
 

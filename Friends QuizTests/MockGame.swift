@@ -11,7 +11,7 @@ import Foundation
 struct MockGame {
     private let questions = Question.allQuestions
     
-    private(set) var currentQuestionIndex = 0
+    var currentQuestionIndex = 0
     
     private(set) var guesses = [Question : Int]()
     

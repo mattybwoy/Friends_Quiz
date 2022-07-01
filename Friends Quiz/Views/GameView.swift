@@ -42,7 +42,9 @@ struct GameView: View {
                     .cornerRadius(25)
                     .overlay(RoundedRectangle(cornerRadius: 25)
                                 .stroke(.black, lineWidth: 5)
+                                
                     )
+                    Spacer()
                 }
             }
         }
