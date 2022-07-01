@@ -23,7 +23,6 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 1. Clone Repository
 
 ## Screenshots
-<img src=(Documentation/StartScreen.png) width="50" height="50">
 ![StartScreen](Documentation/StartScreen.png)
 ![QuizScreen](Documentation/QuizScreen.png)
 ![ResultScreen](Documentation/ResultScreen.png)
