@@ -5,7 +5,7 @@ Friends Quiz
 </h1>
 
 ## Objective
-My first app built using SwiftUI, a friends quiz app built following the MVVM design pattern.
+My first app built using SwiftUI, a quiz app based on the show Friends built following the MVVM design pattern.
 
 ## Progress
 - Start screen implemented
@@ -23,12 +23,12 @@ My first app built using SwiftUI, a friends quiz app built following the MVVM de
 1. Clone Repository
 
 ## Screenshots
-![StartScreen](Documentation/StartScreen.png)
 <img src="Documentation/StartScreen.png" width="50%" height="50%">
-![QuizScreen](Documentation/QuizScreen.png)
-![ResultScreen](Documentation/ResultScreen.png)
+<img src="Documentation/QuizScreen.png" width="50%" height="50%">
+<img src="Documentation/ResultScreen.png" width="50%" height="50%">
 
 ## Demo
+![Quiz](Documentation/FriendsQuizDemo.gif)
 
 ## Tech Stack
 SwiftUI

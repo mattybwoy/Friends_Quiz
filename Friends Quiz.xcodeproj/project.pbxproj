@@ -34,6 +34,7 @@
 		34EC71FE286F090F000923F8 /* ResultScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71FB286F090F000923F8 /* ResultScreen.png */; };
 		34EC71FF286F090F000923F8 /* QuizScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71FC286F090F000923F8 /* QuizScreen.png */; };
 		34EC7200286F090F000923F8 /* StartScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EC71FD286F090F000923F8 /* StartScreen.png */; };
+		34EC7202286F2B28000923F8 /* FriendsQuizDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34EC7201286F2B28000923F8 /* FriendsQuizDemo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		34EC71FB286F090F000923F8 /* ResultScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResultScreen.png; sourceTree = "<group>"; };
 		34EC71FC286F090F000923F8 /* QuizScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizScreen.png; sourceTree = "<group>"; };
 		34EC71FD286F090F000923F8 /* StartScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartScreen.png; sourceTree = "<group>"; };
+		34EC7201286F2B28000923F8 /* FriendsQuizDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FriendsQuizDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				34EC71FC286F090F000923F8 /* QuizScreen.png */,
 				34EC71FB286F090F000923F8 /* ResultScreen.png */,
 				34EC71FD286F090F000923F8 /* StartScreen.png */,
+				34EC7201286F2B28000923F8 /* FriendsQuizDemo.gif */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3460AC8D2864538A004E0179 /* Preview Assets.xcassets in Resources */,
 				34EC71FF286F090F000923F8 /* QuizScreen.png in Resources */,
 				34EC71F6286E0D91000923F8 /* friendsCheer.gif in Resources */,
+				34EC7202286F2B28000923F8 /* FriendsQuizDemo.gif in Resources */,
 				34EC71FE286F090F000923F8 /* ResultScreen.png in Resources */,
 				34EC71EC286E0582000923F8 /* friendsSad.gif in Resources */,
 				34EC71ED286E0582000923F8 /* friendsNotBad.gif in Resources */,
